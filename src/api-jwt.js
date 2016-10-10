@@ -2,7 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 
 module.exports = function enhanceRemoteApi(keystone, prefix = '/remote', privateKey='ksRemoteApi') {
-
+  
   const originKsAuth = keystone.get('auth');
   keystone.set('auth', apiRemoteAuth(privateKey));
 
@@ -17,7 +17,7 @@ module.exports = function enhanceRemoteApi(keystone, prefix = '/remote', private
     app.use(prefix, router);
   })
   
-
+  
   return keystone;
 }
 
