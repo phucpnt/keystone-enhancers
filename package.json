@@ -1,0 +1,24 @@
+{
+  "name": "keystone-enhancers",
+  "version": "0.0.1",
+  "description": "Keystone CMS enhancers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"src/**/__test__/**/*.spec.js\" --ui bdd --require ./test-helper.js"
+  },
+  "keywords": [
+    "keystone",
+    "plugins",
+    "enhancers",
+    "jwt",
+    "jsonwebtoken"
+  ],
+  "author": "Phuc PNT. <mail@phucpnt.com>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "keystone": "^4.0.0-beta.1",
+    "mocha": "^3.1.1",
+    "mockgoose": "^6.0.8"
+  }
+}
